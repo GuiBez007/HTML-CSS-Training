@@ -1,0 +1,59 @@
+=================================== ANOTAÇÕES =============================================================
+gustavoguanabara.github.io
+cliente-side = frontend
+server-side = backend
+
+HTML = HyperText Markup Language - focada em conteúdo (imagens/textos/etc)
+CSS = Cascading Style Sheets - foco em design (cores/tamanhos/sombras/etc)
+JAVASCRIPT = interação
+
+www.github.com/gustavoguanabara = URL
+www = subdominio
+GitHub.com = domínio
+gustavoguanabara = caminho
+.com = TLD (Top Level Domain)
+GTLD (Generic Top Level Domain) e os CCTLD (Country Code Top Level Domain - .com.br ou us, etc)
+EX:
+.com = comercial
+.gov = governamental
+.edu = educacional
+.store = lojas
+OBS: pode ter vários subdomínios e https// = protocolo
+
+=============== SOBRE IMAGENS ==================================================================
+1500 no máx de largura
+posso usar o GIMP para diminuir o tamanho das imagens para melhor desempenho
+Nos vídeos:
+200 de tamanho
+50 de ???
+
+=================================== =================================== =================================== 
+HTML
+<!DOCTYPE html> = para dizer que estou utilizando o html
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"> = para aceitar acentos
+		<meta name="viewport"
+		content="width=device-width,
+		initial-scale=1.0"> = NÃO SEI
+		<title> ... </title> = título
+	</head>
+
+	<body>
+		<h1> ... </h1> = título (vai de 1-6)
+		<hr> = cria uma linha horizontal (Horizontal Rule)
+		<p> ... </p> = parágrafo
+		<br> = quebra para a próxima linha (Break)
+		<img src="....png" alt="..."> = caminho da imagem e imagem alternativa em caso de falha (source é o mesmo que origem)
+	</body>
+<\html>
+
+CSS
+h1 {
+	DECLARAÇÃO (dentro do escopo)
+	font-family: Arial;
+	font-size: 20pt; (podia ser px)
+	color: blue; ◄ VALOR
+	 /\ PROPRIEDADE
+   }
+(h1 é um exemplo de seletor)
