@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formats</title>
+        <link rel="stylesheet" href="gui.css">
+
+        <style> 
+            mark{
+                background-color: rgb(197, 9, 9);
+            }
+            .marcos{
+                background-color: rgb(37, 0, 245);
+                border: solid 2px yellow;
+
+            }
+        </style> <!-- CSS -->
+
+    </head>
+
+    <body>
+        <h1>Main types of formats</h1>
+        <hr>
+
+        <h2>Example with &lt;b&gt;</h2> <!-- bold -->
+        <p><b>Lorem ipsum</b></p>
+        <!-- without mean, just form -->
+
+        <h2>Example with &lt;STRONG&gt;</h2> 
+        <p><strong>Lorem ipsum</strong></p>
+        <!-- with mean (can be easier to ajust after) -->
+
+        <hr> <!-- "horizontal rule" (regra horizontal) cria uma linha horintal -->
+
+        <h2>Example with &lt;i&gt;</h2> <!-- italic -->
+        <p><i>Lorem ipsum</i></p>
+        <!-- without mean, just form -->
+
+        <h2>Example with &lt;EM&gt;</h2> <!-- enfase -->
+        <p><em>Lorem ipsum</em></p>
+        <!-- with mean (can be easier to ajust after) -->
+
+        <hr>
+
+        <h2>Example with &lt;mark&gt;</h2> <!-- default color: yellow -->
+        <p>
+            Lorem ipsum <mark>dolor</mark>, sit amet consectetur adipisicing elit. Velit reprehenderit in vel a quaerat. Beatae eum saepe <mark style="background-color: rgb(4, 129, 14);">molestias</mark> illum dolor, velit error exercitationem sapiente suscipit consectetur cupiditate ullam ratione <mark>enim</mark>.
+        </p>
+        <p>
+            Lorem ipsum <mark class="marcos">dolor</mark>, sit amet consectetur adipisicing elit. Velit reprehenderit in vel a quaerat. Beatae eum saepe <mark class="marcos" style="background-color: rgb(4, 129, 14);">molestias</mark> illum dolor, velit error exercitationem sapiente suscipit consectetur cupiditate ullam ratione <mark class="marcos">enim</mark>.
+        </p>
+
+        <hr>
+
+        <h2>Other</h2>
+        <p>
+            Lorem <big>BIG</big> dolor sit <small>SMALL</small>, consectetur <del>DEL</del> elit. Quasi dignissimos <ins>INS yes</ins> amet omnis, facere ut <u>U no</u> ex rem, commodi et accusamus <sup>SUP</sup> illum iure magni <sub>SUB</sub> unde laborum expedita quo.
+        </p>
+
+
+       
+    </body>
+
+</html>
