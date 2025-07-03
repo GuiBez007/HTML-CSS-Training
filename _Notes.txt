@@ -1,4 +1,21 @@
 =================================== ANOTAÇÕES =============================================================
+
+-PROGRAMAS
+HandBrake - reduzir vídeos sem perder tanta qualidade
+Pexels - baixar vídeos e imagens sem direito autoral
+GIMP - editor leve e fácil de imagens 
+
+-SITES
+Adobe Color - monta paleta de cores para utilização no site e permite extração de cores a partir de uma imagem
+Paletton - monta paleta também e monta um modelo de site para melhor visualização das cores selecionadas
+Coolors - monta paletas de forma aleatória e permite travar alguma cor, fazendo com que as próximas combinem com as cores travadas
+
+-EXTENSÕES
+WebDeveloper - permite desativação de diversos elementos em qualquer site
+ColorZilla - extensão do chrome para capturar o código hexa de uma cor específica na tela
+
+=================================== =================================== =================================== 
+
 gustavoguanabara.github.io
 cliente-side = frontend
 server-side = backend
