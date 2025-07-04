@@ -10,9 +10,16 @@ Adobe Color - monta paleta de cores para utilização no site e permite extraç�
 Paletton - monta paleta também e monta um modelo de site para melhor visualização das cores selecionadas
 Coolors - monta paletas de forma aleatória e permite travar alguma cor, fazendo com que as próximas combinem com as cores travadas
 
+Google Fontes - para adicionar fontes criadas pelo goolge no meu arquivo CSS
+Dafont - baixar fontes
+WhatFontIs - identificar fontes de uma imagem
+Identify Fonts - identificar fontes de uma imagem
+WhatTheFont - identificar fontes de uma imagem
+
 -EXTENSÕES
 WebDeveloper - permite desativação de diversos elementos em qualquer site
 ColorZilla - extensão do chrome para capturar o código hexa de uma cor específica na tela
+Fonts Ninja - identifica todas as fontes utilizadas em um site específico e mostra suas cores, tamanhos, formatos, propriedades disponíveis e utilizadas, etc.
 
 =================================== =================================== =================================== 
 
