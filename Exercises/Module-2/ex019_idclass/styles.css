@@ -1,0 +1,23 @@
+/* 
+    in HTML id / in CSS # (unique)
+    in HTML class / in CSS . (multiply)
+
+    - I can define two classes in a tag and one class with one id too (without , to split)
+    - the id is more "powerfull" than class 
+*/
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-indent: 10%;
+}
+
+#test {
+    text-align: right;
+}
+
+.noident {
+    text-indent: 0%;
+}
