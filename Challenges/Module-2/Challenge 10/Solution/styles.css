@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header {
+    color: white;
+    background-color: #1AC13F;
+    padding-bottom: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+header > div {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+header > nav > a{
+    width: fit-content;
+    padding-right: 20px;
+}
+
+
+body {
+    background-color: #31EA5F;
+}
+
+
+main {
+    width: 500px;
+    max-width: 1200px;
+
+    background-color: white;
+    padding: 0 10px;
+
+    margin: auto;
+}
+main > h1 {
+    color: #266B36;
+}
+main > h2 {
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #2b994565, white);
+    color: #2B9945;
+}

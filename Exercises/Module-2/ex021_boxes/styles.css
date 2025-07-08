@@ -1,4 +1,51 @@
 h1#title {
-    margin: 0 auto;
+    width: fit-content;
+    margin: 10px auto;
+    text-shadow: 3px 3px 10px #A77464 ;
+}
 
+header > nav{
+    width: fit-content;
+    margin: auto;
+}
+
+body {
+    background-image: linear-gradient(to right, #d3a4b9, white); 
+}
+
+main {
+    background-image: linear-gradient(to left, #ebf1e5, white); 
+    width: 1000px;
+    margin: 0 auto;
+}
+
+nav > a{
+    padding-right: 50px;
+}
+
+h2 {
+    margin: 0;
+    color: #88292F;
+}
+
+p {
+    margin: 0 0 20px 0;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+
+
+footer {
+    margin: 0 auto;
+    background-color: #2E1E0F;
+    color: white;
+    height: 50px;
+    width: 1050px;
+}
+
+footer > p {
+    width: fit-content;
+    margin: auto;
+    padding-top: 15px;
 }
