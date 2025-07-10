@@ -1,3 +1,5 @@
+
+
 =================================== ANOTAÇÕES =============================================================
 
 -PROGRAMAS
@@ -20,6 +22,7 @@ WhatTheFont - identificar fontes de uma imagem
 WebDeveloper - permite desativação de diversos elementos em qualquer site
 ColorZilla - extensão do chrome para capturar o código hexa de uma cor específica na tela
 Fonts Ninja - identifica todas as fontes utilizadas em um site específico e mostra suas cores, tamanhos, formatos, propriedades disponíveis e utilizadas, etc.
+Window Resizer - exibe a resolução da tela em pixels em tempo real
 
 =================================== =================================== =================================== 
 

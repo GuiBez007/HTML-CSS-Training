@@ -1,13 +1,44 @@
+@font-face {
+    font-family: 'fonte-externa';
+    src: url("../Fonts/idroid.otf");
+}
+
+/* VARIÁVEIS NO CSS ☺ */
+:root {
+    --cor0: #ffffff;
+    --fonte_padrao: 'Arial, Helvetica, sans-serif';
+}
+
 * {
     padding: 0;
     margin: 0;
+    font-family: var(--fonte_padrao);
+}
+p {
+    text-indent: 30px;
+    font-size: larger;
+}
+.negrito {
+    font-weight: 600;
+}
+.verde {
+    color: #195A36;
+}
+.back-verde {
+    background-image: linear-gradient(to right, #C5EBD6, var(--cor0));
 }
 
 
+body {
+    background-color: #82dda9;
+}
+
 
 header {
+    height: 140px;
+    padding-top: 25px;
     color: white;
-    background-color: #1AC13F;
+    background-image: linear-gradient(to top, #195836,#288D55, #288d5591);
     padding-bottom: 5px;
     box-shadow: 2px 2px 2px black;
 }
@@ -16,31 +47,122 @@ header > div {
     width: fit-content;
     margin: auto;
 }
-header > nav > a{
-    width: fit-content;
-    padding-right: 20px;
+header > div > p {
+    margin-top: 20px;
 }
 
+header > nav {
+    margin-top: 20px;
+}
+header > nav > a{
+    width: fit-content;
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
 
-body {
-    background-color: #31EA5F;
+    /* MUDANÇA DE ESTADO EM... */
+    transition-duration: 0.5s; 
+}
+header a:hover {
+    text-decoration: underline;
+    color: black;
+    font-weight: 600;
+    background-color: #82dda9;
 }
 
 
 main {
-    width: 500px;
-    max-width: 1200px;
-
-    background-color: white;
+    width: 75%;
+    max-width: 1000px;
+    margin: 2px auto 20px auto;
     padding: 0 10px;
+    border-radius: 0 0 5px 5px;
 
-    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
+    background-color: white;
 }
 main > h1 {
-    color: #266B36;
+    color: #185A36;
+    font-family: 'fonte-externa';
+    padding-top: 10px;
 }
 main > h2 {
     margin-top: 10px;
-    background-image: linear-gradient(to right, #2b994565, white);
-    color: #2B9945;
+    color: #195A36;
+    font-family: 'fonte-externa';
+}
+
+
+/* fiquei travado por conta de um m no final da palavra image */
+.imagem {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 5px 0;    
+}
+#droids { 
+}
+#woman {
+}
+#human-n-droid {
+    height: 300px;
+    width: 450px;
+    padding: auto;
+}
+
+
+#video-atekita-dev {
+    background-color: #195836;
+    padding: 10px 15px;
+    max-width: 800px;
+    margin: auto;
+}
+#video-atekita-dev > iframe {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+#aprender-mais {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #C5EBD6;
+}
+#aprender-mais-titulo {
+    background-color: #207c49;
+    padding: 0 10px;
+    border-radius: 10px 10px 0 0;
+    padding: 5px 10px;
+
+    color: white;
+}
+#aprender-mais-texto {
+    padding: 0 10px;
+    overflow: hidden;
+}
+#aprender-mais-texto > ul {
+    display: inline-block;
+}
+#lista1 {
+    padding-left: 20px;
+}
+#lista2 {
+    padding-left: 150px;
+}
+
+
+#texto-final {
+    padding-bottom: 10px;
+}
+
+
+footer {
+    height: 25px;
+    background-color: #195A36;
+    color: white;
+}
+footer > p {
+    padding-top: 3px;
+    width: fit-content;
+    margin: auto;
 }
