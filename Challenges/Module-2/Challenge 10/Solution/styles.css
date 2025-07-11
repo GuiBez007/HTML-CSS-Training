@@ -17,6 +17,7 @@
 p {
     text-indent: 30px;
     font-size: larger;
+    margin: 10px 0;
 }
 .negrito {
     font-weight: 600;
