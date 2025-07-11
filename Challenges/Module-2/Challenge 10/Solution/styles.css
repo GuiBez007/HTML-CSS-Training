@@ -26,7 +26,7 @@ p {
     color: #195A36;
 }
 .back-verde {
-    background-image: linear-gradient(to right, #C5EBD6, var(--cor0));
+    background-color: #C5EBD6;
 }
 
 
@@ -38,10 +38,10 @@ body {
 header {
     height: 140px;
     padding-top: 25px;
-    color: white;
+    color: rgb(240, 236, 236);
     background-image: linear-gradient(to top, #195836,#288D55, #288d5591);
     padding-bottom: 5px;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.204);
 }
 header > div {
     text-align: center;
@@ -91,6 +91,7 @@ main > h2 {
     margin-top: 10px;
     color: #195A36;
     font-family: 'fonte-externa';
+    background-image: linear-gradient(to right, #C5EBD6, white);
 }
 
 
