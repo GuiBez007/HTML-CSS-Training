@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #horizontal {            
+                height: 200px;                
+                background-image: url(Imagens/pattern003.png);
+                background-repeat: repeat-x;
+            }
+            #vertical {                
+                height: 900px;
+                width: 200px;
+                background-image: url(Imagens/pattern001.png);
+                background-repeat: repeat-y;           
+            }
+            #unique {
+                background-image: url(Imagens/pattern001.png);
+                background-repeat: no-repeat;
+                height: 100%;
+            }
+            div {
+                border: solid;                
+            }
+            body {
+                background-image: url(Imagens/pattern004.png);
+                background-repeat: repeat;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="horizontal">
+            <div id="unique"></div>
+        </div>
+        <div id="vertical"></div>
+
+    </body>
+</html>
