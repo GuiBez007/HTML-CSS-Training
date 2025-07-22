@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                width: 97vw;
+                height: 97vh;
+                margin: auto;
+                /* padding: 0.5% 0; */
+                border: solid red;
+            }
+
+            main { 
+                display: flex; 
+                height: 100%; 
+                border: solid blue;
+            }
+
+            aside {
+                border: solid ;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                border: solid yellow;
+            }
+
+            .img50h { height: 50%; }
+
+            #img-dupla {
+                display: flex;
+                height: 50%;
+            }
+            .img50w {
+                width: 50%;
+                border: solid rgb(212, 11, 11);
+            }
+
+            div {
+                border: solid;
+                margin: 5px;
+            }
+        </style>
+        <title>Flexbox Training</title>
+    </head>
+
+    <body>
+        <main>
+            <aside id="left-side">
+                <div class="img50h"></div>
+                <div class="img50h"></div>
+            </aside>
+
+            <aside id="right-side">
+                <div class="img50h"></div>
+                <div id="img-dupla">
+                    <div class="img50w"></div>
+                    <div class="img50w"></div>
+                </div>
+            </aside>
+        </main>
+
+    </body>
+</html>
