@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+            :root {
+                /* FONTES */
+                --font1: "Passion One", sans-serif;
+                --font2: "Sriracha", cursive;
+
+                /* CORES DAS FONTES */
+                --cor-texto-header: white;
+                --cor-texto-main: black;
+                --cor-texto-imagens: white;
+                --cor-texto-footer: white;
+
+                /* CORES DO BACKGROUND */
+                --cor-background-padrao: blue;
+                --cor-background-header: black;
+                --cor-background-main: white;
+                --cor-background-footer: black;
+
+                /* TAMANHOS */
+                --tamanho-texto-header: 3em;
+                --padding-header: 20px;
+                --tamanho-texto-footer: 2em;
+                --padding-dos-textos: 20px;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+
+            header {
+                background-color: var(--cor-background-header);
+                padding: var(--padding-header);
+                font-size: var(--tamanho-texto-header);
+            }
+            header> h1, header> p {
+                width: fit-content;
+                padding: var(--tamanho-header) / 5;
+                color: var(--cor-texto-header);
+                font-family: var(--font1);
+                margin: auto;
+            }
+            header a {
+                text-decoration: none;
+                color: var(--cor-texto-header);
+            }
+            
+
+            main {
+                background-color: var(--cor-background-main);
+                color: var(--cor-texto-main);
+                font-family: var(--font2);
+            }
+            main > p {
+                font-size: 4vw;
+                padding-left: var(--padding-dos-textos);
+            }
+
+
+            .image {
+                background-color: var(--cor-background-padrao);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;                      
+                box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.664);
+
+                padding-top: var(--padding-dos-textos);
+                padding-left: var(--padding-dos-textos);
+                padding-bottom: calc(100vw / 8);
+            }
+            .text-image {
+                background-color: rgba(0, 0, 0, 0.438);
+                color: var(--cor-texto-imagens);
+                padding: 0 var(--padding-dos-textos);
+                width: fit-content;
+                font-size: 4vw;
+                text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.678);
+            }
+
+
+            footer {
+                font-size: var(--tamanho-texto-footer);
+                background-color: var(--cor-background-footer);
+                color: var(--cor-texto-footer);
+            }
+
+
+            span, a {
+                font-weight: 600;
+            }
+            span:hover, a:hover {
+                color: aqua;
+                text-decoration: underline;
+            }
