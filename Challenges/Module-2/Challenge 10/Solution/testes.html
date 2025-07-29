@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            border: solid;
+            background-color: aqua;
+
+            /* position: relative - serve de referencia para o position absolute do filho */
+            /* padding-botton: 50% - a porcentagem vem sempre da LARGURA. Colocando -botton, uso a largura para configurar a ALTURA */
+            padding-bottom: 50%;
+            position: relative;
+        }
+        div > iframe {
+            /* Simplesmente absoluto (em relação a um pai com position != static). Fica onde eu quiser e até mesmo sobrepõe elementos */
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quidem laboriosam similique, voluptatibus repudiandae nostrum magni ea obcaecati ab dolorem commodi architecto molestiae. Ut vero aperiam velit iusto nihil expedita.</p>
+
+    <div>
+        <iframe width="1128" height="635" src="https://www.youtube.com/embed/l2UDgpLz20M" title="The next evolution of Android" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quidem laboriosam similique, voluptatibus repudiandae nostrum magni ea obcaecati ab dolorem commodi architecto molestiae. Ut vero aperiam velit iusto nihil expedita.</p>
+</body>
+</html>

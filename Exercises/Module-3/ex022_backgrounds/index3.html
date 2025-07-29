@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body > div {
+                width: fit-content;
+                margin: auto;
+                /* background-color: black; */
+            }
+            .image {
+                display: inline-block;
+                border: solid;
+                height: 200px;
+                width: 800px;
+                margin: 10px auto;
+                background-image: url(Imagens/wallpaper003.jpg);
+            }
+            #img1 {
+                background-position: left top;
+            }
+            #img2 {
+                background-position: right top;
+            }
+            #img3 {
+                display: block;
+                background-position: center;
+            }
+            #img4 {
+                background-position: left bottom;
+            }
+            #img5 {
+                background-position: right bottom;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="test">
+            <div class="image" id="img1"></div>
+            <div class="image" id="img2"></div>
+        </div>
+        <div class="image" id="img3"></div>
+        <div>
+            <div class="image" id="img4"></div>
+            <div class="image" id="img5"></div>
+        </div>
+                
+    </body>
+</html>
