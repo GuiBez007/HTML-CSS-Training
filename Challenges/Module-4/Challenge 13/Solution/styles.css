@@ -6,69 +6,41 @@
     --reducao-tela: 66px;
     --tamanho-tela: 690px;
 }
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
 body {
     position: relative;
     background-image: url(../Images/fundo-madeira.jpg);
     background-size: cover;
-
     width: 99vw;
     height: 99vh;
 }
 
 
-#menu-lateral {
+.ico {
+    display: block;
+    box-sizing: border-box;
+    margin: 30px 10px;
+    height: var(--tamanho-botoes);
+    width: var(--tamanho-botoes);
+    border-radius: 50%;
+} #menu-lateral {
     position: fixed;
     display: inline-block;
     /* background-color: brown; */
     width: var(--tamanho-botoes);
     right: var(--correcao-botoes);
-}
-
-.ico {
-    display: block;
-    margin: 30px 10px;
-    height: var(--tamanho-botoes);
-    width: var(--tamanho-botoes);
-    border-radius: 50%;
-}
-
-aside img:hover {
+} aside img:hover {
     border: 5px solid white;
     width: calc(var(--tamanho-botoes) + 5px);
     height: calc(var(--tamanho-botoes) + 5px);;
 }
 
-#home-ico {
-    
-}#youtube-ico {
-    
-}#github-ico {
-    
-}#instagram-ico {
-    
-}#twitter-ico {
-    
-}#facebook-ico {
-    
-}
-
-#area-cell {
-    border: solid;
-    position: relative;
-    display: inline-block;
-
-    /* background-color: aqua; */
-    margin: 0 auto;
-    width: calc(100vw - var(--tamanho-botoes) - var(--correcao-botoes));
-    height: 100%;
-}
 
 .center-element {
     position: absolute;
@@ -76,10 +48,19 @@ aside img:hover {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#cell {
+#area-cell {
+    position: relative;
+    display: inline-block;
+
+    margin: 0 auto;
+    width: calc(100vw - var(--tamanho-botoes) - var(--correcao-botoes));
+    height: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.527);
+    /* background-color: aqua; */
+    /* border: solid; */
+} #cell {
     width: var(--tamanho-cell);
-}
-iframe {
+} iframe {
     background-color: blueviolet;
     width: calc(var(--tamanho-cell) - var(--reducao-tela));
     height: var(--tamanho-tela);

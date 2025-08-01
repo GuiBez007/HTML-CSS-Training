@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>More Forms</title>
+        <style>
+            h1 {
+                margin: 0;
+            }
+
+            label, input {
+                display: block;
+                font-size: 1.5em;
+                margin: 5px;
+            }
+
+            div {
+                display: inline-block;
+            }
+
+            .inline-input {
+                display: inline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Exam Scheme</h1>
+        <form action="teste.py" method="get">
+
+            <div>
+                <label for="iname">Nome> </label>
+                <label for="igrade">Grade> </label>
+                <label for="idate">Date> </label>
+                <label for="itime">Time> </label>
+            </div>
+
+            <div>
+                <input type="text" name="name" id="iname" required minlength="3" maxlength="15" placeholder="Seu nome">
+
+                <input type="number" name="grade" id="igrade" required step="0.1" min="0" max="10" placeholder="De 0-10">
+
+                <input type="date" name="date" id="idate" required value="2025-08-01">
+
+                <input type="time" name="time" id="itime" required value="15:30">
+            </div>
+
+
+            <!-- BOTÕES -->
+            <div style="display: block;">
+                <input class="inline-input" type="submit" value="Enviar dados">
+                <input class="inline-input" type="reset" value="Limpar">
+            </div>
+
+            <!-- JEITO ANTIGO -->
+            <!-- <div>
+                <label for="iname">Nome> </label>
+                <input type="text" name="name" id="iname" required minlength="3" maxlength="15" placeholder="Seu nome">
+            </div>
+
+            <div>
+                <label for="igrade">Grade> </label>
+                <input type="number" name="grade" id="igrade" required step="0.1" min="0" max="10" placeholder="De 0-10">
+            </div>
+
+            <div>
+                <label for="idate">Date> </label>
+                <input type="date" name="date" id="idate" required >
+            </div> -->
+        </form>
+    </body>
+</html>

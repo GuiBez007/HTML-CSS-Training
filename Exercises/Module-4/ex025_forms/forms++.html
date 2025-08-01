@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interesting</title>
+        <style>
+            :root {
+                --small-field-size: 100px;
+                --medium-field-size: 200px;
+                --large-field-size: 300px;
+            }
+
+            div {
+                margin: 20px;
+            }
+
+            label, input {font-size: 1.5em;}
+            #ipass {
+                width: var(--medium-field-size);
+            }
+            #iname {
+                width: var(--large-field-size);
+            }
+            #submit {
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="teste.py" method="post" autocomplete="off">
+            <div>
+                <label for="iname">Name> </label>
+                <input type="text" name="name" id="iname" autocomplete="name" required minlength="3" maxlength="15" placeholder="Inform your name">
+            </div>
+
+            <div>
+                <label for="">Password> </label>
+                <input type="password" name="pass" id="ipass" required minlength="4" maxlength="8" placeholder="Between 4-8 digits" autocomplete="current-password">
+            </div>
+
+            <input id="submit" type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    border: solid red; 
+    text-align: center;
+    color: black;
+    font-size: 2em; 
+
+    width: 100%;
+    transition-duration: 0.5s;
+} a:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 0, 255, 0.829);
+    color: white;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
