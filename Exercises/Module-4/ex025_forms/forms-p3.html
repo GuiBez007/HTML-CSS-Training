@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                /* margin: 0;
+                padding: 0;
+                box-sizing: border-box; */
+            }
+            body {
+                background-image: linear-gradient(to right, red, yellow);
+            }
+            main {
+                background-color: white;
+                width: 80%;
+                margin: auto;
+                padding: 15px;
+                margin-top: 100px;
+                border-radius: 20px;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.616);
+            }
+
+            input {border-left: 5px;}
+            legend {font-size: 2em;}
+            label {font-size: 1.5em;}
+
+            fieldset {
+                border: solid;
+                
+                margin: auto;
+            }
+            h1 {
+                text-align: center;
+                font-size: 2.5em;
+                text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+                color: blue;
+                text-decoration: underline;
+            }
+            
+            .botao {
+                font-size: 1.5em;
+                margin-top: 10px;
+            }
+
+            form > fieldset:nth-of-type(3) > div {
+                margin: 10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <h1>Formulário de esportes</h1>
+            <form action="teste.py" method="get">
+
+                <!-- CHECKED marca os campos por padrão -->
+                <!-- SEXO -->
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <input type="radio" name="sexo" id="im" required>
+                    <label for="im">Masculino</label> <br>
+
+                    <input type="radio" name="sexo" id="if">
+                    <label for="if">Feminino</label> <br>
+                </fieldset>
+
+                <!-- FAVORITOS -->
+                <fieldset>
+                    <legend>Favoritos</legend>
+                    <input type="checkbox" name="tenis" id="i1" >
+                    <label for="i1">Tênis</label> <br>
+
+                    <input type="checkbox" name="futebol" id="i2" checked>
+                    <label for="i2">Futebol</label> <br>
+                </fieldset>
+
+                <!-- OUTRAS FUNCIONALIDADES -->
+                <fieldset>
+                    <legend>Outras funcionalidades</legend>
+                    <div> 
+                        <input type="color" name="cor" id="icor">
+                        <label for="icor">◄= Selecione uma cor</label>
+                    </div>
+                    
+                    <div>
+                        <label for="irange">Classifique a pesquisa entre 0 a 10</label>
+                        <input type="range" name="range" id="irange" value="0" min="0" max="10" oninput="out1.innerHTML = Number(irange.value)">
+
+                        <output id="out1">0</output>
+                    </div>
+
+                    <div>
+                        <input type="file" name="file" id="ifile">
+                    </div>
+                </fieldset>
+
+                <!-- CAIXAS DE SELEÇÃO -->
+                <fieldset>
+                    <legend>Caixas de Seleção</legend>
+
+                    <!-- lista1 -->
+                    <select name="estado" id="iestado">
+                        <option value="">--- Selecione uma resposta ---</option>
+                        <optgroup label="Estados">
+                            <option value="MG">Mato Grosso</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                        </optgroup>
+
+                        <optgroup label="Video Games">
+                            <option value="PS">Playstation</option>
+                            <option value="X">Xbox</option>
+                            <option value="NI">Nitendo</option>
+                        </optgroup>
+                    </select> <br>
+
+                    <!-- lista2 -->
+                    <label for="iselecao">Selecione aqui também =►</label>
+                    <input type="text" name="selecao" id="iselecao" list="lista2" oninput="out2.innerHTML = String(iselecao.value)">
+
+                    <datalist id="lista2">
+                        <option >Mato Grosso</option>
+                        <option >São Paulo</option>
+                        <option >Rio de Janeiro</option>
+                        <option >Playstation</option>
+                        <option >Xbox</option>
+                        <option value="NI">Nitendo</option>
+                    </datalist>
+                </fieldset>
+
+                <!-- RESUMO -->
+                <fieldset>
+                    <legend>RESUMO</legend>
+
+                    <output id="out2">Estado escolhido</output>
+                </fieldset>
+
+                    <!-- BOTÕES -->
+                    <input class="botao" type="submit" value="Enviar">
+            </form>
+        </main>
+        
+
+    </body>
+</html>
