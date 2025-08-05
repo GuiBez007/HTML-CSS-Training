@@ -13,30 +13,35 @@ html, body {
 
 body {
     background-color: black;
-    background-image: url(../Images/back-phone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 
 main {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.747);
     border-radius: 10px;
-    width: 500px;
-
+    
+    width: 70vw;
     margin: auto;
     /* padding: 1px; */
 }
 h1 {
+    padding-top: 10px;
     text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
 img {
-    width: 150px;
+    width: 250px;
     margin: auto;
 }
 #phone {
-    display: block;
+    display: none;
 } #tablet {
     display: none;
-} #computer {
+} #desktop {
     display: none;
 } #printer {
     display: none;

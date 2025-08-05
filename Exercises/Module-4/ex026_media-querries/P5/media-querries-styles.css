@@ -1,0 +1,26 @@
+/* 
+    Tipo de tela	   Largura da tela (máx/min)
+    Celular	           de 600px até 768px
+    Tablet	           de 768px até 992px
+    Desktop	           de 992px até 1200px
+    Grandes telas	   acima de 1200px 
+*/
+
+
+/* TABLET */
+@media (min-width: 768px){
+    #menu {
+        display: block;
+    }
+    #menu-button {
+        display: none;
+    }
+    nav {
+        text-align: center;
+        margin: auto;
+    }
+    a {
+        display: inline-block;
+        width: 100px;
+    }
+}

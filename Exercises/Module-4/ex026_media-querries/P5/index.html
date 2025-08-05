@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media-querries-styles.css">
+</head>
+
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <div id="menu-button" onclick="clickMenu()"></div>
+        <nav id="menu">
+            <a href="">Opção 1</a>
+            <a href="">Opção 2</a>
+            <a href="">Opção 3</a>
+            <a href="">Opção 4</a>
+            <a href="">Opção 5</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Testando Media Querries</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui harum aliquam quibusdam neque. Quibusdam ducimus laudantium odio qui eaque cum, quod, modi at aliquid reprehenderit animi a deserunt corporis quo.
+            Necessitatibus est doloremque accusamus quasi corporis esse, facilis, consequatur voluptatem excepturi expedita minima aliquam hic voluptatibus praesentium. Neque ea accusantium, quos ipsam adipisci fugiat dolores ducimus numquam placeat praesentium esse!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellendus sint illum, expedita eligendi neque maiores similique quasi numquam harum consequuntur quos perspiciatis, excepturi dolorem nam. Maxime, non voluptatibus? Est.
+            Cupiditate ipsum ducimus commodi nemo odit corporis veritatis quae ex, harum sit repellat tempora unde doloribus animi soluta alias molestias quasi libero in cumque! Dignissimos ipsa accusamus nesciunt. Error, aut.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius velit cupiditate quae. Eligendi, architecto maiores vel voluptas esse quisquam dolorem libero tenetur laborum, magni expedita, ex excepturi doloribus vitae asperiores.
+            Nam molestiae eaque optio? Nemo, quam aut obcaecati laudantium incidunt dolorem suscipit perspiciatis, quibusdam, magnam ullam aliquam odio dignissimos recusandae. Eveniet, maxime quaerat obcaecati blanditiis excepturi aliquam deleniti delectus aspernatur?
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam cum modi voluptatum at odit. Voluptas in iste ipsum possimus enim inventore, eaque culpa nihil eum animi! Quasi tempore minima fugit.
+            Eligendi ad, recusandae, tenetur molestiae omnis adipisci perspiciatis corrupti veniam eos aliquid, cumque reprehenderit. Architecto omnis repellat quos explicabo non iure sed modi cum, officiis error similique, quam quo unde.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ratione distinctio, expedita in quaerat reprehenderit iste. Nostrum unde reprehenderit molestiae ullam labore! Exercitationem asperiores voluptatum, provident hic incidunt autem cupiditate.
+            Temporibus delectus necessitatibus fugiat dolore laborum odit animi, dignissimos id facilis fugit! Error molestiae nulla eius corporis iusto earum quasi, pariatur labore id a laboriosam minima saepe aperiam ut. Praesentium.
+        </p>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (menu.style.display != 'block')
+                menu.style.display = 'block'
+            else
+                menu.style.display = 'none'
+        }
+        function mudouTamanho() {
+            if (window.innerWidth >= 768)
+                menu.style.display = 'block'
+            else
+                menu.style.display = 'none'
+        }
+    </script>
+
+</body>
+</html>

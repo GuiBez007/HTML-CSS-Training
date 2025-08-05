@@ -1,0 +1,44 @@
+/* 
+    Tipo de tela	   Largura da tela (máx/min)
+    Celular	           de 600px até 768px
+    Tablet	           de 768px até 992px
+    Desktop	           de 992px até 1200px
+    Grandes telas	   acima de 1200px 
+*/
+
+/* PRINTER */
+@media print{
+    body {
+        background-image: url(../Images/back-print.jpg);
+    } 
+    #printer {display: block;}
+    #phone {display: none;}
+}
+
+/* PHONE */
+@media (min-width: 600px) and (max-width: 768px) {
+    body {
+        background-image: url(../Images/back-phone.jpg);
+    } #phone {display: block;}
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../Images/back-tablet.jpg);
+    } #tablet {display: block;}
+}
+
+/* DESKTOP */
+@media (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../Images/back-pc.jpg);
+    } #desktop {display: block;}
+}
+
+/* TELEVISION */
+@media (min-width: 1200px) {
+    body {
+        background-image: url(../Images/back-tv.jpg);
+    } #television {display: block;}
+}
