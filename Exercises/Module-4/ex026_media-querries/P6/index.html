@@ -10,24 +10,23 @@
 
 <body>
     <main>
-        <div id="auxiliar"></div>
-        <div id="principal">
+        <div id="tela-branca">
             <h1>Login</h1>
             <p>
-                Seja bem vindo Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aut quidem sunt dolorum, nihil eum iusto fugiat consectetur officia nesciunt culpa perferendis cum reiciendis labore numquam ea illo recusandae sapiente!
+                Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
             </p>
 
             <form action="" method="get">
-                <div id="div-email" class="form-input">
-                    <input type="email" name="email" id="iemail">
+                <div id="div-email" class="form-input-div">
+                    <input type="email" name="email" id="iemail" required placeholder=" Seu email">
                 </div>
 
-                <div id="div-senha" class="form-input">
-                    <input type="password" name="senha" id="isenha">
+                <div id="div-senha" class="form-input-div">
+                    <input type="password" name="senha" id="isenha" required placeholder=" Sua senha">
                 </div>
 
-                <input class="form-input" type="submit" value="Entrar">
-                <input class="form-input" type="button" value="Esqueci Senha">
+                <input id="btn-entrar" class="form-input-button" type="submit" value="Entrar">
+                <input id="btn-esqueci-senha" class="form-input-button" type="button" value="Esqueci a Senha">
 
             </form>
 

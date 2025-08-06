@@ -18,24 +18,22 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* border: solid; */
-    border-radius: 25px;
-
+    
     height: 700px;
-    width: 400px;
-
+    width: 360px;
+    border-radius: 25px;
+    
     background-image: url(../Images/build.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-position: top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.61);
     
 }
 
-#auxiliar {
-    height: 10%;
-    /* width: 100%; */
-}
 
-#principal {
+#tela-branca {
     position: absolute;
     bottom: 0;
 
@@ -44,54 +42,60 @@ main {
     border-radius: 0 0 25px 25px;
 }
 
+
 h1 {
     text-align: center;
+    padding: 10px;
 }
-
-#iemail, #isenha {
-
-}
-
-div {
-    
-}
-
-.roxo {
-    background-color: blueviolet;
-    border-radius: 5px;
+p {
+    padding-left: 10px;
+    padding-bottom: 5px;
 }
 
 
-form {
-    width: 96%;
-    margin: auto;
-    
+input {
+    border-radius: 10px;
 }
-
-.form-input {
-    /* padding: 3px; */
+/* As "4 DIVS" (2 divs + 2 button) */
+.form-input-button, .form-input-div {
     margin: 3px 0;
     border-radius: 10px;
     width: 100%;
-    
-} 
-#iemail, #isenha {
-    margin: 1px;
-    
+    height: 40px;
+    padding: 2px;
+    box-sizing: content-box;
 }
-#div-email, #div-senha {
+.form-input-div {
+    position: relative;
     background-color: blueviolet;
 }
 
-.button {
+
+#div-email::before {
+    display: block;
+    background-color: aqua;
+    width: 20px;
+    height: 10px;
     
 }
 
-input {
-    height: 40px;
-    border-radius: 10px;
-    
-    
-    /* width: 90%; */
-    
+/* Campos de input EMAIL e SENHA */
+#iemail, #isenha {
+    position: absolute;
+    right: 1px;
+    height: 90%;
+    width: 80%;
 }
+
+#btn-entrar {
+    background-color: rgb(9, 182, 182);
+    color: white;
+    border: 0;
+}
+
+#btn-esqueci-senha {
+    background-color: white;
+    color: rgba(1, 54, 1, 0.993);
+    border: 1px solid rgba(0, 128, 0, 0.473);
+}
+

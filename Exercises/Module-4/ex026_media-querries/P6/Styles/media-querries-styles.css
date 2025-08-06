@@ -7,13 +7,29 @@
 */
 
 @media (min-width: 768px) and (max-width: 992px) {
-    
+    main {
+        height: 340px;
+        width: 700px;
+    }
+
+    #tela-branca {
+        height: 100%;
+        width: 400px;
+        right: 0;
+        border-radius: 0 10px 10px 0;
+    }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) {
+    main {
+        height: 340px;
+        width: 900px;
+    }
 
-}
-
-@media (min-width: 1200px) {
-
+    #tela-branca {
+        height: 100%;
+        width: 500px;
+        left: 0;
+        border-radius: 10px 0 0 10px;
+    }
 }
