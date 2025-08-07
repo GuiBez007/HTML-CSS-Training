@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } body {
+            background-color: rgba(128, 128, 128, 0.541);
+            background-image: linear-gradient(to top, rgba(128, 128, 128, 0.541), rgba(255, 255, 255, 0.842));
+            height: 100vh;
+            width: 100vw;
+        }
+
+        header {
+            display: flex;
+            flex-flow: column nowrap;
+            align-content: center;
+            background-color: gray;
+            padding: 10px;
+        }
+        header > nav {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 10px;
+            text-align: center;
+        } header a {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
+            flex-basis: 120px;
+        } header a:hover {
+            background-color: white;
+            color: black;
+        } 
+        header > h1 {
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.562);
+        }
+
+        div {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.61);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="">Opção 1</a>
+            <a href="">Opção 2</a>
+            <a href="">Opção 3</a>
+            <a href="">Opção 4</a>
+            <a href="">Opção 5</a>
+            <a href="">Opção 6</a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1>Teste Flexbox</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam, quaerat necessitatibus maiores fugit exercitationem in aliquam neque nihil reprehenderit delectus possimus. Harum deleniti nostrum, unde in necessitatibus id explicabo.
+                Eius ad quod aspernatur aliquam. Quidem ut expedita quae, modi at ducimus laboriosam deserunt placeat nihil, porro quas minima maiores ipsum cupiditate optio. Repellendus magni quae eos sequi iste culpa.
+                Maxime ipsa quaerat itaque voluptatem quos nisi iste tempore veniam deserunt, doloribus eaque blanditiis sapiente dolorem placeat magni necessitatibus corporis, fugit natus amet hic explicabo nesciunt. Est aliquam nihil corporis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni culpa architecto quia dolorem voluptatibus esse optio molestias earum, a qui tempora fugiat natus ea ipsam minus laboriosam aliquam blanditiis eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ipsum consequatur sunt similique provident quo quod, libero esse saepe animi iure numquam exercitationem, consequuntur et non, ad corrupti at dolorem.
+            </p>
+        </div>
+    </main>
+</body>
+</html>
