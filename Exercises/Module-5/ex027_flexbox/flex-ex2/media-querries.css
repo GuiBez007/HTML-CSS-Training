@@ -1,0 +1,5 @@
+@media (min-width: 650px) {
+    #first-part > img {
+        order: 1;
+    }
+}
