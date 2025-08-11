@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main-div {
+            border: solid black;
+            height: 700px;
+
+            display: grid;
+            /* grid-template: 2fr 1fr 5fr 1fr / 1fr 2fr 1fr; */
+            grid-template-rows: 2fr 1fr 5fr 1fr;
+            grid-template-columns: 1fr 2fr 1fr;
+
+            /* place-items: ; */
+            /* place-content: ; */
+            gap: 10px;
+        }
+
+        #header {
+            background-color: yellow;
+            grid-row-start: 1;
+            grid-column-start: 1;
+            grid-row-end: 2;
+            grid-column-end: -1;
+        }
+        #menu {
+            background-color: rgb(0, 255, 21);
+            grid-row: 2 / 3;
+            grid-column: 1 / -1;
+        }
+        #principal {
+            background-color: rgb(38, 0, 255);
+            grid-row-start: 3;
+            grid-row-end: -2;
+            grid-column-start: 1;
+            grid-column-start: -2;
+        }
+        #secundario {
+            background-color: rgb(255, 42, 0);
+            grid-area: 3 / 1 / 4 / -2;
+        }
+        #footer {
+            background-color: rgb(0, 247, 255);
+            grid-row: 4 / -1; 
+            grid-column: 1 / span 3;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="main-div">
+        <div id="header"></div>
+        <div id="menu"></div>
+        <div id="principal"></div>
+        <div id="secundario"></div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
